@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: var(--bg);
+  --color-brand-primary: var(--primary);
+  --color-brand-secondary: var(--secondary);
+  --color-brand-text: var(--text);
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --bg: #0A0A0A;
+  --primary: #F5C542;
+  --secondary: #262626;
+  --text: #F5F5F5;
+}
+
+:root.light {
+  --bg: #FAFAF9;
+  --primary: #D4A017;
+  --secondary: #1C1C1C;
+  --text: #222222;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+    margin: 0;
+    font-weight: 400;
+  }
+}
+
+.bg-custom-bg { background-color: var(--bg); }
+.text-custom-text { color: var(--text); }
+.bg-custom-primary { background-color: var(--primary); }
+.text-custom-primary { color: var(--primary); }
+.bg-custom-secondary { background-color: var(--secondary); }
+.border-custom-secondary { border-color: var(--secondary); }
