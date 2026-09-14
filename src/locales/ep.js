@@ -68,7 +68,11 @@ export const ep = {
     pSelected: "Seleccionado",
     pAmount: "Importe del plan facturado:",
     pDuration: "Duración",
-    pSimultaneous: "Simultáneos"
+    pSimultaneous: "Simultáneos",
+    youSelectedThisPlan: "Has seleccionado este plan",
+    autoProceedingIn: "Continuando automáticamente en",
+    proceedNow: "Continuar Ahora",
+    seconds: "segundos"
   },
   auth: {
     signIn: "Iniciar Sesión",

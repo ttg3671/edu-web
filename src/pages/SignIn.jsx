@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import { useAppSettings } from '../useAppSettings';
 import axios from '../api/axios';
 import { useDispatch, useSelector } from 'react-redux';
@@ -19,17 +19,25 @@ const SignIn = () => {
   
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
+  const [searchParams] = useSearchParams();
+  const planParam = location.state?.plan || searchParams.get('plan');
   const currentUser = useSelector((state) => state.user.currentUser);
 
   useEffect(() => {
     if (currentUser) {
       if (!isEmailVerified(currentUser)) {
-        navigate('/verify-email', { state: { email: currentUser.email, fromLogin: true }, replace: true });
+        navigate('/verify-email', { state: { email: currentUser.email, fromLogin: true, plan: planParam }, replace: true });
       } else {
-        navigate(getVerifiedUserRedirectPath(currentUser), { replace: true });
+        const dest = getVerifiedUserRedirectPath(currentUser);
+        if (dest === '/pricing' && planParam) {
+          navigate(`/pricing?plan=${encodeURIComponent(planParam)}`, { replace: true });
+        } else {
+          navigate(dest, { replace: true });
+        }
       }
     }
-  }, [currentUser, navigate]);
+  }, [currentUser, navigate, planParam]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -56,9 +64,14 @@ const SignIn = () => {
         dispatch(setToken(accessToken));
 
         if (!isEmailVerified(user)) {
-          navigate('/verify-email', { state: { email: user?.email || email, fromLogin: true } });
+          navigate('/verify-email', { state: { email: user?.email || email, fromLogin: true, plan: planParam } });
         } else {
-          navigate(getVerifiedUserRedirectPath(user));
+          const dest = getVerifiedUserRedirectPath(user);
+          if (dest === '/pricing' && planParam) {
+            navigate(`/pricing?plan=${encodeURIComponent(planParam)}`);
+          } else {
+            navigate(dest);
+          }
         }
       } else {
         setError(response.data.message || 'Login failed');

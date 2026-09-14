@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams, useLocation } from 'react-router-dom';
 import { useAppSettings } from '../useAppSettings';
 import useAxiosPrivate from '../hooks/useAxiosPrivate';
 import { FaCheck, FaDesktop, FaChevronRight } from 'react-icons/fa';
+import { findMatchingPlan } from '../utils/plan';
 
 import axios from '../api/axios';
 import { useSelector } from 'react-redux';
@@ -14,6 +15,10 @@ const Pricing = () => {
   const [loading, setLoading] = useState(true);
   const [subscribing, setSubscribing] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
+  const [searchParams] = useSearchParams();
+  const location = useLocation();
+  const [errorMessage, setErrorMessage] = useState(location.state?.error || '');
+  const planParam = searchParams.get('plan');
   const axiosPrivate = useAxiosPrivate();
   const navigate = useNavigate();
   const currentUser = useSelector((state) => state.user.currentUser);
@@ -25,7 +30,14 @@ const Pricing = () => {
         const response = await axiosPrivate.get('/api/v1/payments/plans', { showLoader: false });
         // console.log(response.data);
         if (response.data.isSuccess) {
-          setPlans(response.data.data.plans);
+          const fetchedPlans = response.data.data.plans;
+          setPlans(fetchedPlans);
+          if (planParam) {
+            const matched = findMatchingPlan(fetchedPlans, planParam);
+            if (matched) {
+              setSelectedPlan(matched);
+            }
+          }
         }
       } catch (error) {
         // Silent error
@@ -142,6 +154,12 @@ const Pricing = () => {
           </p>
           <div className="h-1 w-24 bg-custom-primary mx-auto mt-8"></div>
         </motion.div>
+
+        {errorMessage && (
+          <div className="max-w-xl mx-auto mb-10 p-4 rounded-xl bg-red-500/15 border border-red-500/40 text-red-500 font-bold text-center text-xs uppercase tracking-widest shadow-md">
+            {errorMessage}
+          </div>
+        )}
 
         {loading ? (
           <div className="flex justify-center items-center h-64">

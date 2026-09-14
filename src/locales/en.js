@@ -68,7 +68,11 @@ export const en = {
     pSelected: "Selected",
     pAmount: "Plan amount billed:",
     pDuration: "Duration",
-    pSimultaneous: "Simultaneous"
+    pSimultaneous: "Simultaneous",
+    youSelectedThisPlan: "You selected this plan",
+    autoProceedingIn: "Proceeding automatically in",
+    proceedNow: "Proceed Now",
+    seconds: "seconds"
   },
   auth: {
     signIn: "Sign In",
