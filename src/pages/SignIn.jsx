@@ -21,7 +21,7 @@ const SignIn = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [searchParams] = useSearchParams();
-  const planParam = location.state?.plan || searchParams.get('plan');
+  const planParam = location.state?.plan || searchParams.get('plan') || new URLSearchParams(location.state?.from?.search || '').get('plan');
   const currentUser = useSelector((state) => state.user.currentUser);
 
   useEffect(() => {

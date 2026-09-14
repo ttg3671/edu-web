@@ -10,12 +10,17 @@ const ProtectedRoute = ({ children }) => {
 
   if (!currentUser) {
     // Redirect them to the /login page, but save the current location they were
-    // trying to go to when they were redirected.
-    return <Navigate to="/login" state={{ from: location }} replace />;
+    // trying to go to when they were redirected, preserving any plan query parameter.
+    const searchParams = new URLSearchParams(location.search);
+    const plan = searchParams.get('plan');
+    const redirectUrl = plan ? `/login?plan=${encodeURIComponent(plan)}` : '/login';
+    return <Navigate to={redirectUrl} state={{ from: location, plan }} replace />;
   }
 
   if (!isEmailVerified(currentUser)) {
-    return <Navigate to="/verify-email" state={{ email: currentUser.email, fromLogin: true }} replace />;
+    const searchParams = new URLSearchParams(location.search);
+    const plan = searchParams.get('plan');
+    return <Navigate to="/verify-email" state={{ email: currentUser.email, fromLogin: true, plan }} replace />;
   }
 
   return children;
