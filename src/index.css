@@ -40,3 +40,8 @@
 .text-custom-primary { color: var(--primary); }
 .bg-custom-secondary { background-color: var(--secondary); }
 .border-custom-secondary { border-color: var(--secondary); }
+
+::selection {
+  background-color: var(--primary);
+  color: #0A0A0A;
+}

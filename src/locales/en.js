@@ -1,9 +1,4 @@
 export const en = {
-  hero: {
-    title: "Get the EduGarciaMovimiento App now!",
-    subtitle: "Join the movement and unlock your body's full potential",
-    cta: "Start your transformation"
-  },
   navbar: {
     home: "Home",
     app: "Edugarcia app",
@@ -17,26 +12,82 @@ export const en = {
     language: "Language",
     theme: "Theme"
   },
-  features: {
-    main_title: "Eduardo García",
-    section1: {
-      title: "Master Your Movement",
-      desc1: "Develop a relationship with your body to move naturally, improve your capabilities, feel free, safe, and connected with your essence.",
-      desc2: "Whether you're an athlete looking to improve performance or someone seeking a healthier lifestyle, I provide the tools and guidance necessary to achieve lasting results through conscious movement.",
-      cta: "Learn My Method"
+  home: {
+    hero: {
+      title: "Rediscover everything your body can do",
+      subtitle: "Enjoy a free body, develop your abilities and get fit from anywhere to move and feel better.",
+      desc: "Take with you the Physical Education you need to learn to train your body holistically, improving your movement, your physical abilities and skills while enjoying exercise and an active life.",
+      cta: "Start your 7-day free trial",
+      secondary: "Watch video"
     },
-    section2: {
-      title: "A Personal Journey",
-      p1: "I've always felt that exercises and training distanced me from my essence and disconnected me from my body, always focused outward, on how others see me or how I see myself, and very little inward, on how I feel, on what I am.",
-      p2: "This became clear when injuries left me unable to move as I wanted, lacking security and confidence in my body, with fear of re-injury and unable to enjoy my body. Although my body looked good, I was completely disconnected...",
-      p3: "I discovered in natural human movement a way to reconnect with my essence, to feel wonderful, to balance my body and make it move like never before, to go from being in the mind to being in the body, in the present, to look inward instead of outward and to build a confidence in my body and myself that led me to enjoy what my body can do.",
-      p4: "Bachelor's degree in Physical Activity and Sport Sciences, with a Master's in Physical Education, continuous training in movement schools and disciplines worldwide and deep research in the Psychomotor Development of the human being, movement in our early childhood years and of wild humans in current tribes and our ancestors, in conjunction with current science.",
-      p5: "They have led me to develop a natural movement method that gives your body what your genes need in terms of movement, a deep connection with yourself through your body's movement and the development of capabilities and skills that allow you to feel your body, know what it needs and give it to it so that it stays in constant evolution and improvement.",
-      stats: {
-        years: "Years Exp",
-        students: "Students",
-        countries: "Countries"
-      }
+    video: {
+      label: "Explainer video",
+      soon: "Coming soon",
+      taglines: ["Train at your own pace.", "Develop your abilities.", "Explore your movement.", "Enjoy your body."]
+    },
+    philosophy: {
+      p1: "In childhood, many of us lived an excellent example of physical capability.",
+      p2: "Starting with great energy, flexibility to feel comfortable on the floor, agility to move our body freely and elasticity to do it in a dynamic and varied way, and great strength shown in our ability to climb, jump and run, anytime and anywhere. That is our natural state.",
+      quote: "Our body is made for movement, not to always exercise it the same way.",
+      p3: "Movement is how we develop all our physical abilities. Instead of training just one, you will nourish your body with all the stimuli it needs to perform all your daily and favourite activities with more ease, safety and harmony.",
+      p4: "We never had an Education that taught us to know our body, how to use it and how to train it so that everything is easier, we have better health and capacity and enjoy life more. Because we have a body that accompanies us and empowers us in every situation in life.",
+      p5: "There is nothing more beautiful than enjoying the process and feeling how we become more and more capable, with more mobility, higher levels of strength and agility, knowing how to develop them naturally, according to our level and needs."
+    },
+    membership: {
+      title: "The EduMovimiento App Membership",
+      intro: "Includes all the content available for you anywhere, anytime.",
+      points: [
+        "No matter where you are or what your level is, you have perfect programs to keep improving and move on to others.",
+        "You will have guided programs, routines and free movement practices according to your level, needs and time.",
+        "Everything is designed so you learn to know your body and your current level, and know how to progress in your abilities, skills and movement at your own pace.",
+        "Inside the EduMovimiento app you will find sections divided by level, practice time, type of practice and goals."
+      ]
+    },
+    skills: {
+      title: "Enjoy programs, free practices and learn skills in:",
+      items: [
+        { name: "Mobility", desc: "Improve your range of motion and your body's availability." },
+        { name: "Strength", desc: "Boost your body's confidence and control and progress in your strength levels." },
+        { name: "Natural Movement", desc: "Move with ease, agility, fluidity, beauty and efficiency." },
+        { name: "Body Awareness", desc: "Learn to use every part of your body." },
+        { name: "Energy & release", desc: "Release tension and let energy flow through your body." },
+        { name: "Balance & coordination", desc: "Fundamental abilities to improve your movement and cognition." },
+        { name: "Object handling", desc: "Learn to move with ropes, sticks, balls, weights…" },
+        { name: "Flows", desc: "Learn movement sequences that challenge your coordination, mobility and body control." },
+        { name: "Posture & breathing", desc: "Decompress, balance and expand your body." }
+      ],
+      more: "…And much more!",
+      closing: "All the Integral Physical Education we need to learn to move better and enjoy our body in any activity, learn to train our physical abilities for life, cultivate a capable, free body ready for anything, and have a holistic practice that empowers us in every area of our life."
+    },
+    about: {
+      eyebrow: "Who's behind it?",
+      name: "Edu García",
+      role: "Creator of EduMovimiento, trainer and educator of natural human movement.",
+      p1: "Bachelor's degree in Physical Activity and Sport Sciences with a Master's in Physical Education as formal training.",
+      p2: "Constantly studying through courses, master's programs and non-formal coaching across different movement and training disciplines, as well as with teachers from all over the world.",
+      p3: "His method combines the simplest, most accessible and natural ways to improve human physical abilities, based on progression and psychomotor development and enriched with educational methodologies, so that learning to train your body holistically on your own and living an active life connected to your body is fun, simple and transformative.",
+      stats: [
+        { value: "+2,000", label: "students enjoying what their body can do." },
+        { value: "2M", label: "followers across his social networks, bringing Movement and Integral Physical Education to the whole world." }
+      ]
+    },
+    testimonials: {
+      title: "People like you who are already enjoying what their body can do."
+    },
+    faq: {
+      title: "Frequently asked questions",
+      questions: [
+        { q: "Is it suitable for my age?", a: "We have students from 30 years old developing their abilities to 65+ moving and feeling better than in their thirties. There are also parents sharing it with their children. In the app you will always find what suits your level, regardless of age, and what you need to improve step by step at your own pace." },
+        { q: "What if I haven't moved in years?", a: "Then it's perfect for you: you will learn to move naturally and train easily from home, progressing whenever you need." },
+        { q: "How much time do I need?", a: "Time is not a problem for moving. Inside you will find practices and routines from 3 minutes. Whether you have little time or want longer practices, you will have endless possibilities." },
+        { q: "Do I need to buy equipment?", a: "Buying equipment is not required, except a mat for floor movements. There are many programs and practices without equipment, and others with it. So if you want to learn to handle objects, improve your pulling strength or train with equipment, in EduMovimiento you can also use dumbbells, a stick, rope, bar, rings and kettlebell.\n\nWelcome to the world of movement, where you will learn to handle not only your body but other elements too! Enjoy everything your body can do." },
+        { q: "Can I cancel anytime?", a: "Yes, cancel whenever you want, there is no commitment. You cancel the subscription from your account at any time and your access will close at the end of your current billing period." },
+        { q: "Which devices can I watch it on?", a: "On any mobile phone, both Android and Apple, also on tablets, and you can cast it from your devices to your TV on the same wifi network to watch it on the big screen." }
+      ]
+    },
+    finalCta: {
+      text: "It's time to build a capable body holistically, enjoying the process and fitting it to your life, so it always stays with you.",
+      cta: "Start today with your 7-day free trial"
     }
   },
   podcasts: {

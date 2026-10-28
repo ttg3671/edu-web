@@ -46,7 +46,7 @@ function ScrollToTop() {
 
 function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-custom-bg font-sans selection:bg-custom-primary selection:text-black">
+    <div className="min-h-screen bg-custom-bg font-sans">
       <Navbar />
       {children}
       <Footer />

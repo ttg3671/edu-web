@@ -1,9 +1,4 @@
 export const ep = {
-  hero: {
-    title: "¡Consigue la App EduGarciaMovimiento ahora!",
-    subtitle: "Únete al movimiento y desbloquea todo el potencial de tu cuerpo",
-    cta: "Comienza tu transformación"
-  },
   navbar: {
     home: "Inicio",
     app: "Edugarcia app",
@@ -17,26 +12,82 @@ export const ep = {
     language: "Idioma",
     theme: "Tema"
   },
-  features: {
-    main_title: "Eduardo García",
-    section1: {
-      title: "Domina Tu Movimiento",
-      desc1: "Desarrolla una relación con tu cuerpo para moverte de forma natural, mejorar tus capacidades, sentirte libre, seguro y conectado con tu esencia.",
-      desc2: "Tanto si eres un atleta que busca mejorar su rendimiento como si eres alguien que busca un estilo de vida más saludable, te proporciono las herramientas y la guía necesarias para lograr resultados duraderos a través del movimiento consciente.",
-      cta: "Conoce Mi Método"
+  home: {
+    hero: {
+      title: "Redescubre todo lo que tu cuerpo puede hacer",
+      subtitle: "Disfruta de un cuerpo libre, desarrolla tus capacidades y ponte en forma desde cualquier lugar para moverte y sentirte mejor.",
+      desc: "Lleva contigo la Educación Física que necesitas para aprender a entrenar tu cuerpo de forma integral mejorando tu movimiento, tus capacidades y habilidades físicas disfrutando de ejercitarte y llevar una vida activa.",
+      cta: "Empieza tus 7 días gratis",
+      secondary: "Ver video"
     },
-    section2: {
-      title: "Un Viaje Personal",
-      p1: "Siempre he sentido que los ejercicios y el entrenamiento me alejaban de mi esencia y me desconectaban de mi cuerpo, siempre enfocados hacia fuera, en cómo me ven los demás o cómo me veo yo, y muy poco hacia dentro, en cómo me siento, en lo que soy.",
-      p2: "Esto quedó claro cuando las lesiones me dejaron sin poder moverme como quería, falto de seguridad y confianza en mi cuerpo, con miedo a volver a lesionarme y sin poder disfrutar de mi cuerpo. Aunque mi cuerpo se veía bien, yo estaba completamente desconectado…",
-      p3: "Descubrí en el movimiento humano natural una forma de volver a conectar con mi esencia, de sentirme de maravilla, de equilibrar mi cuerpo y hacer que se mueva como nunca, de pasar de estar en la mente a estar en el cuerpo, en el presente, de mirar hacia dentro en lugar de hacia fuera y de construir una confianza en mi cuerpo y en mí mismo que me llevó a disfrutar de lo que mi cuerpo puede hacer.",
-      p4: "Licenciado en Ciencias de la Actividad Física y del Deporte, con Máster en Educación Física, formación continua en escuelas y disciplinas de movimiento por todo el mundo e investigación profunda en el Desarrollo Psicomotriz del ser humano, el movimiento en nuestros primeros años de infancia y de los humanos salvajes en tribus actuales y nuestros ancestros, en conjunción con la ciencia actual.",
-      p5: "Me han llevado a desarrollar un método de movimiento natural que le da a tu cuerpo lo que tus genes necesitan en cuanto a movimiento, una conexión profunda contigo mismo a través del movimiento de tu cuerpo y el desarrollo de capacidades y habilidades que te permitan sentir tu cuerpo, saber qué necesita y dárselo para que se mantenga en constante evolución y mejora.",
-      stats: {
-        years: "Años Exp",
-        students: "Estudiantes",
-        countries: "Países"
-      }
+    video: {
+      label: "Video explicativo",
+      soon: "Próximamente",
+      taglines: ["Entrena a tu ritmo.", "Desarrolla tus capacidades.", "Explora tu movimiento.", "Disfruta de tu cuerpo."]
+    },
+    philosophy: {
+      p1: "En la infancia vivimos en muchos casos un excelente ejemplo de capacidad corporal.",
+      p2: "Empezando por una gran energía, flexibilidad para estar a gusto en el suelo, agilidad para mover nuestro cuerpo libre y elasticidad para hacerlo de forma dinámica y variada, una gran fuerza demostrada en nuestra capacidad de trepar, saltar y correr y poder realizarlo en cualquier momento y lugar. Ese es nuestro estado natural.",
+      quote: "Nuestro cuerpo está hecho para el movimiento, no para ejercitarlo siempre de la misma forma.",
+      p3: "A través del movimiento es como desarrollamos todas nuestras capacidades físicas, en vez de solo entrenar una, nutrirás a tu cuerpo con todos los estímulos que necesita para realizar con más facilidad, seguridad y armonía todas tus actividades diarias y favoritas.",
+      p4: "Nunca tuvimos una Educación que nos enseñara a conocer nuestro cuerpo, saberlo utilizar y saber cómo entrenarlo para que todo sea más fácil, tengamos mejor salud y capacidad y disfrutemos más la vida. Porque tenemos un cuerpo que nos acompaña y nos potencia en cualquier situación de la vida.",
+      p5: "No hay nada más bonito que disfrutar del proceso y de sentir cómo cada vez somos más capaces, tenemos más movilidad, mayores niveles de fuerza, agilidad y sabemos cómo desarrollarlas de forma natural, acorde a nuestro nivel y necesidades."
+    },
+    membership: {
+      title: "La Membresía de la App EduMovimiento",
+      intro: "Incluye todo el contenido disponible para ti en cualquier lugar y en cualquier momento.",
+      points: [
+        "Da igual el punto en el que estés y el nivel que tengas, tienes programas perfectos para ti para mejorar constantemente y avanzar a otros.",
+        "Tendrás programas guiados, rutinas y prácticas de movimiento libre según tu nivel, necesidades y tiempo.",
+        "Todo está pensado para que aprendas a conocer tu cuerpo, tu nivel actual y sepas cómo progresar en tus capacidades, habilidades y movimiento a tu ritmo.",
+        "Dentro de la app EduMovimiento tendrás secciones divididas por niveles, tiempo de práctica, tipo de práctica y objetivos."
+      ]
+    },
+    skills: {
+      title: "Podrás disfrutar de programas, prácticas libres y aprender habilidades de:",
+      items: [
+        { name: "Movilidad", desc: "Mejora tu rango de movimiento y la disponibilidad de tu cuerpo." },
+        { name: "Fuerza", desc: "Potencia la seguridad de tu cuerpo, el control y progresa en tus niveles de fuerza." },
+        { name: "Movimiento Natural", desc: "Muévete con soltura, agilidad, fluidez, belleza y eficiencia." },
+        { name: "Consciencia Corporal", desc: "Aprende a usar cada parte de tu cuerpo." },
+        { name: "Energía y liberación", desc: "Libera la tensión y el flujo energético por tu cuerpo." },
+        { name: "Equilibrio y coordinación", desc: "Capacidades fundamentales para mejorar tu movimiento y cognición." },
+        { name: "Manejo de objetos", desc: "Aprende a moverte con cuerdas, palos, pelotas, pesas…" },
+        { name: "Flows", desc: "Aprende secuencias de movimientos que desafían tu coordinación, movilidad y control corporal." },
+        { name: "Postura y respiración", desc: "Descomprime, equilibra y expande tu cuerpo." }
+      ],
+      more: "…¡Y mucho más!",
+      closing: "Toda la Educación Física Integral que necesitamos para aprender a movernos mejor y disfrutar de nuestro cuerpo en cualquier actividad, aprender a entrenar nuestras capacidades físicas para siempre, cultivar un cuerpo capaz, libre, preparado para todo y tener una práctica holística que nos potencie en cada área de nuestra vida."
+    },
+    about: {
+      eyebrow: "¿Quién está detrás?",
+      name: "Edu García",
+      role: "Creador de EduMovimiento, entrenador y educador de movimiento natural humano.",
+      p1: "Licenciado en Ciencias de la Actividad Física y el Deporte con Máster de Educación Física como formación reglada.",
+      p2: "Con un estudio constante de diversas formaciones, másters y coaching no reglados de diferentes disciplinas de movimiento y entrenamiento, además de con maestros de distintos lugares del mundo.",
+      p3: "Así combina en su método las formas más sencillas, asequibles y naturales de mejorar las capacidades físicas humanas, basadas en la progresión y el desarrollo psicomotor y enriquecidas con metodologías educativas, para que sea divertido, sencillo y transformador que las personas aprendan a entrenar su cuerpo de forma integral por sí mismas y a llevar una vida activa conectadas con su cuerpo.",
+      stats: [
+        { value: "+2.000", label: "alumnos disfrutando de lo que su cuerpo puede hacer." },
+        { value: "2M", label: "seguidores entre todas sus redes sociales, llevando el Movimiento y la Educación Física Integral al mundo entero." }
+      ]
+    },
+    testimonials: {
+      title: "Personas como tú que ya están disfrutando de lo que su cuerpo puede hacer."
+    },
+    faq: {
+      title: "Preguntas frecuentes",
+      questions: [
+        { q: "¿Es adecuado para mi edad?", a: "Hay desde alumnos y alumnas de 30 años desarrollando sus capacidades hasta +65 años moviéndose y sintiéndose mejor que en sus treintas. También hay padres compartiéndolo con sus hijos. En la app siempre tendrás lo adecuado a tu nivel, independientemente de la edad, y lo necesario para mejorar paso a paso a tu ritmo." },
+        { q: "¿Y si llevo años sin moverme?", a: "Entonces es perfecto para ti: aprenderás a moverte de forma natural y entrenar fácilmente, desde casa, y progresar cuando lo necesites." },
+        { q: "¿Cuánto tiempo necesito?", a: "El tiempo no es un problema para moverse. Dentro encontrarás prácticas y rutinas desde los 3 minutos. Tanto si tienes poco tiempo como si quieres hacer prácticas más largas tendrás infinidad de posibilidades." },
+        { q: "¿Necesito comprar material?", a: "No es obligatorio comprar material, salvo una esterilla para movimientos que sean en el suelo. Hay multitud de programas y prácticas para hacer sin material, pero también hay otros que sí. Por tanto, si te apetece aprender a manejar objetos, mejorar tu fuerza de tracción o entrenar con material, en EduMovimiento podrás también usar mancuernas, palo, cuerda, barra, anillas y kettlebell.\n\n¡Bienvenido al mundo del movimiento, donde aprenderás a manejar no solo tu cuerpo sino también otros elementos! Disfruta de todo lo que tu cuerpo puede hacer." },
+        { q: "¿Puedo cancelar cuando quiera?", a: "Sí, cancela cuando quieras, no hay permanencia. Cancelas la suscripción desde tu cuenta en cualquier momento y al terminar el periodo que tengas contratado se cerrará tu acceso." },
+        { q: "¿En qué dispositivos puedo verlo?", a: "En cualquier teléfono móvil, tanto Android como Apple, también en tablets, y puedes compartirlo desde los dispositivos con tu televisión bajo la misma red wifi para verlo a lo grande." }
+      ]
+    },
+    finalCta: {
+      text: "Es el momento de construir un cuerpo capaz de forma holística, disfrutando del proceso y haciéndolo acorde a tu vida, para que siempre te acompañe.",
+      cta: "Empieza hoy con tus 7 días de prueba gratuita"
     }
   },
   podcasts: {

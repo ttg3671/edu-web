@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Hero from '../UI/Hero';
 import Features from '../UI/Features';
-import Testimonials from '../components/Testimonials';
+import { About, HomeTestimonials, HomeFaq, FinalCta } from '../UI/HomeSections';
 import { useAppSettings } from '../useAppSettings';
 import { motion } from 'framer-motion';
 import axios from '../api/axios';
@@ -154,7 +154,8 @@ const Home = () => {
     <main>
       <Hero />
       <Features />
-      <Testimonials />
+      <About />
+      <HomeTestimonials />
       
       <section id="pricing" className="pt-12 pb-24 sm:py-24 px-6 bg-custom-secondary text-center">
         <div className="max-w-7xl mx-auto">
@@ -228,6 +229,9 @@ const Home = () => {
           )}
         </div>
       </section>
+
+      <HomeFaq />
+      <FinalCta />
     </main>
   );
 };
